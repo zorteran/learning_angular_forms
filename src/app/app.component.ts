@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from './models/employee';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  languages = ["English", "Spanish", "Polish"];
+  model = new Employee('Jaś', 'Fasola', false, "w2", "Polish", null);
 }
